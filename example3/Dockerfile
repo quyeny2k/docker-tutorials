@@ -8,4 +8,4 @@ COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 
-CMD ["python", "-m", "pytest", "test_ops.py"]
+CMD ["python", "-m", "pytest", "-v", "tests/test_ops.py"]
