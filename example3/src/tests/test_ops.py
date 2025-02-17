@@ -1,4 +1,4 @@
-from ops import *
+from example3.src.ops import *
 
 def test_add():
     assert add(2,3) == 5
