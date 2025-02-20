@@ -6,7 +6,7 @@ COPY ops.py .
 COPY requirements.txt .
 COPY tests ./tests
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+#RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 
-CMD ["python", "-m", "pytest", "-v", "tests"]
-#CMD ["sleep", "300"]
+#CMD ["python", "-m", "pytest", "-v", "tests"]
+CMD ["sleep", "300"]
